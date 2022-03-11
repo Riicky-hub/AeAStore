@@ -1,0 +1,54 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+header {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(58, 58, 58, 0.8);
+}
+.navbarHeader {
+    align-items: center;
+    font-weight: 600;
+}
+#logoLink h1{
+    margin-bottom: 0;
+    color: black;
+    cursor: default;
+}
+.showcaseImage img {
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.showcaseImage_text {
+    width: 100%;
+    position: relative;
+    padding: 4% 0 0 3%;
+    font-family:'Playfair Display', serif;
+}
+.showcaseImage_text .text {
+    width: 40%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.892);
+    text-align: center;
+}
+.showcaseImage_text .text h3 {
+    margin-bottom: 5px;
+}
+.showcaseImage_text .text span {
+    display: block;
+    margin: auto;
+    width: 160px;
+    border-bottom: 4px solid black;
+}
+.showcaseImage_text .text p {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .showcaseImage_text {
+        display: none;
+    }
+}
