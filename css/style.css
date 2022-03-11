@@ -1,10 +1,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    background: #F1F2F4;
 }
 header {
     padding: 5px 0;
     border-bottom: 1px solid rgba(58, 58, 58, 0.8);
+    background: white;
 }
 .navbarHeader {
     align-items: center;
@@ -15,21 +17,22 @@ header {
     color: black;
     cursor: default;
 }
+.showcaseImage {
+    position: relative;
+}
 .showcaseImage img {
-    position: absolute;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .showcaseImage_text {
-    width: 100%;
-    position: relative;
-    padding: 4% 0 0 3%;
+    position: absolute;
+    top: 60px;
+    left: 50px;
     font-family:'Playfair Display', serif;
 }
 .showcaseImage_text .text {
     width: 40%;
-    padding: 5px 5px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.892);
     text-align: center;
@@ -46,6 +49,20 @@ header {
 .showcaseImage_text .text p {
     margin-top: 3px;
     margin-bottom: 0;
+}
+.owl-carousel {
+    margin: 15px 0;
+}
+footer {
+    padding: 10px 0;
+    color: white;
+    height: 5%;
+    background: rgb(24, 24, 24);
+}
+footer h3 {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0;
 }
 @media (max-width: 768px) {
     .showcaseImage_text {

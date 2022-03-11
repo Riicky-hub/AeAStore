@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A&A - Home</title>
-    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
                     <h1>A&A Store</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMobileMenu" aria-expanded="false" aria-label="Toggle de Navegação">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navMobileMenu">
                     <ul class="navbar-nav ms-auto text-center">
@@ -37,25 +38,64 @@
     </header>
     <section class="showcaseImage">
         <img src="./img/showcaseImage.jpg" alt="Roupas">
-        <div class="showcaseImage_text">
+        <div class="showcaseImage_text caption">
             <div class="text">
                 <h3>Nossa Loja</h3>
                 <span></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. eligendi voluptas repellat sequi sint quos reiciendis odio veritatis praesentium quasi molestias aspernatur facilis?</p>
+                <p>Nossos ternos são os melhores do pais, o produto é recomendado por várias empresas afiliadas e também
+                    exportamos para outros países da Europa, América do norte e toda América do Sul!
+                </p>
             </div>
-            
         </div>
     </section>
     <section>
-
+        <div class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img src="./img/carousel/terno_branco.jpg" alt="Terno Branco"></a></div>
+            <div class="item"><a href="#"><img src="./img/carousel/terno_preto.jpg" alt="Terno Preto"></a></div>
+            <div class="item"><a href="#"><img src="./img/carousel/terno_vermelho.jpg" alt="Terno Vermelho"></a></div>
+            <div class="item"><a href="#"><img src="./img/carousel/terno_ciano.jpg" alt="Terno Ciano"></a></div>
+            <div class="item"><a href="#"><img src="./img/carousel/terno_cinza.jpg" alt="Terno Cinza"></a></div>
+            <div class="item"><a href="#"><img src="./img/carousel/terno_verde.jpg" alt="Terno Verde"></a></div>
+            <div class="item"><a href="#"><img src="./img/carousel/terno_azul.jpg" alt="Terno Azul"></a></div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <h1>Marque um horário!</h1>
+                    <p>Nossa equipe de atendimento, te auxiliará com qualquer dúvida, basta preencher o cadastro. Ou nos encontre na nossa alfaiataria em São Paulo!</p>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome: </label>
+                        <input type="text" class="form-control" placeholder="Ricardo Amorim" name="nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail: </label>
+                        <input type="email" class="form-control" placeholder="email@email.com" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Celular: </label>
+                        <input type="number" class="form-control" placeholder="(11)0000-0000" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem: </label>
+                        <textarea class="form-control" name="mensagem" cols="8" rows="5" style="resize: none;" placeholder="Estou interessado em um modelo!"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-dark btn-lg mb-3">Enviar</button>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
-
+        <h3>&copy;Riicky-hub</h3>
     </footer>
     <!-- Libs - JS -->
-    <script src="./vendor/owl/js/owl.js"></script>
-    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/efde86963f.js" crossorigin="anonymous"></script>
     <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
