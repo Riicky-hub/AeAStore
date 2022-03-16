@@ -3,7 +3,7 @@ body {
     font-weight: 300;
     background: #F1F2F4;
 }
-header {
+#headerNav {
     padding: 5px 0;
     border-bottom: 1px solid rgba(58, 58, 58, 0.8);
     background: white;
@@ -12,7 +12,7 @@ header {
     align-items: center;
     font-weight: 600;
 }
-#logoLink h1{
+#logoLinkTexto{
     margin-bottom: 0;
     color: black;
     cursor: default;
@@ -47,8 +47,7 @@ header {
     border-bottom: 4px solid black;
 }
 .showcaseImage_text .text p {
-    margin-top: 3px;
-    margin-bottom: 0;
+    margin: 3px 7px 0 7px;
 }
 .owl-carousel {
     margin: 15px 0;
