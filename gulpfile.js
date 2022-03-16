@@ -8,23 +8,23 @@ const image = require('gulp-imagemin');
 
 // Funções
 function tarefaCSS(cb) {
-    return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css')
-        .pipe(concat('libs.css'))
+    return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.css', './src/css/*.css'])
+        .pipe(concat('styles.css'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/css'))
 }
 
 function tarefaJS() {
-    return gulp.src(['./node_modules/jquery/dist/jquery.js', './node_modules/bootstrap/dist/js/bootstrap.js'])
-        .pipe(concat('libs.js'))
+    return gulp.src(['./node_modules/jquery/dist/jquery.js', './node_modules/bootstrap/dist/js/bootstrap.js', './src/js/*.js'])
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/js'))
 }
 
 function tarefaIMG() {
-    return gulp.src('./img/**/*')
+    return gulp.src('./src/img/**/*')
         .pipe(image({
             pngquant: true,
             optipng: false,
